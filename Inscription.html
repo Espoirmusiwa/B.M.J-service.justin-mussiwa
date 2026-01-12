@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | B.M.J SERVICE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #0b1c2d;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 22px;
+        }
+
+        a.back {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FORM CONTAINER */
+        .container {
+            max-width: 500px;
+            background-color: #ffffff;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #0b1c2d;
+        }
+
+        .container p {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* FORM */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input {
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0b1c2d;
+        }
+
+        /* BOUTON COMME LIEN VERS DASHBOARD */
+        .btn-inscrire {
+            background-color: #ff9800;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-inscrire:hover {
+            background-color: #e68900;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #0b1c2d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #06101c;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>B.M.J SERVICE</h1>
+    <a href="index.html" class="back">Accueil</a>
+</header>
+
+<div class="container">
+    <h2>Créer un compte</h2>
+    <p>Inscrivez-vous pour accéder aux formations et aux livres professionnels.</p>
+
+    <!-- Formulaire avec bouton qui redirige vers le tableau de bord -->
+    <form>
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+
+        <label for="email">Adresse email</label>
+        <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+
+        <label for="confirm">Confirmer le mot de passe</label>
+        <input type="password" id="confirm" name="confirm" placeholder="Confirmez le mot de passe" required>
+
+        <!-- Redirection vers tableau de bord -->
+        <a href="dashboard.html" class="btn-inscrire">S’inscrire</a>
+    </form>
+
+    <div class="login-link">
+        Vous avez déjà un compte ?
+        <a href="connexion.html">Se connecter</a>
+    </div>
+</div>
+
+<footer>
+    © 2026 B.M.J SERVICE – Plateforme de formation professionnelle
+</footer>
+
+</body>
+</html>
